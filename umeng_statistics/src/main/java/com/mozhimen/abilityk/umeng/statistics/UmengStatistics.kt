@@ -22,9 +22,19 @@ object UmengStatistics : IUtilK {
 
     ////////////////////////////////////////////////////////////////////
 
+    private var _lastPageName: String = ""
+
     /**
      * 页面开始统计
      */
+    @JvmStatic
+    fun onPageStartAuto(pageName: String) {
+        if (_lastPageName.isNotEmpty())
+            onPageEnd(_lastPageName)
+        onPageStart(pageName)
+        _lastPageName = pageName
+    }
+
     @JvmStatic
     fun onPageStart(pageName: String) {
         Log.d(TAG, "onPageStart: pageName $pageName")
@@ -32,14 +42,14 @@ object UmengStatistics : IUtilK {
     }
 
     @JvmStatic
-    fun onResume(context: Context,pageName: String) {
-        Log.d(TAG, "onResume: pageName $pageName")
+    fun onResume(context: Context, pageName: String) {
+        Log.d(TAG, "onResume   : pageName $pageName")
         MobclickAgent.onResume(context)
     }
 
     @JvmStatic
-    fun onPause(context: Context,pageName: String) {
-        Log.d(TAG, "onPause: pageName $pageName")
+    fun onPause(context: Context, pageName: String) {
+        Log.d(TAG, "onPause    : pageName $pageName")
         MobclickAgent.onPause(context)
     }
 
@@ -48,7 +58,7 @@ object UmengStatistics : IUtilK {
      */
     @JvmStatic
     fun onPageEnd(pageName: String) {
-        Log.d(TAG, "onPageEnd: pageName $pageName")
+        Log.d(TAG, "onPageEnd  : pageName $pageName")
         MobclickAgent.onPageEnd(pageName)
     }
 
