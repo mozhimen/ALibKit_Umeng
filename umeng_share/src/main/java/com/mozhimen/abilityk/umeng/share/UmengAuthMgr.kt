@@ -18,6 +18,6 @@ import com.umeng.socialize.PlatformConfig
 object UmengAuthMgr {
     @JvmStatic
     fun init() {
-        PlatformConfig.setVKontakte()
+//        PlatformConfig.setVKontakte()
     }
 }
