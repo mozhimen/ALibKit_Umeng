@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.mozhimen.netk.umeng_push'
+    namespace 'com.mozhimen.abilityk.umeng.share'
     compileSdk 33
 
     defaultConfig {
