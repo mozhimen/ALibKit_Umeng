@@ -21,8 +21,10 @@ dependencyResolutionManagement {
 
 rootProject.name = "AAbilityKit_Umeng"
 include ':app'
+include ':umeng_statistics'
+include ':umeng_push'
 //SwiftKit
 include ':SwiftKit'
 project(':SwiftKit').projectDir = new File("C:\\Users\\${System.getenv().get("USERNAME")}\\Documents\\GitHub\\SwiftKit")
 include ':SwiftKit:basick'
-include ':umeng_statistics'
+
