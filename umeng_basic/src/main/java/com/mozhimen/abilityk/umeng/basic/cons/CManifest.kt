@@ -1,4 +1,4 @@
-package com.mozhimen.abilityk.umeng.statistics.cons
+package com.mozhimen.abilityk.umeng.basic.cons
 
 /**
  * @ClassName CManifest

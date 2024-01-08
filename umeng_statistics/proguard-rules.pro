@@ -21,7 +21,8 @@
 #-renamesourcefileattribute SourceFile
 
 #/////////////////////////////////////////////////////////////////////
-#umeng
+#umeng_statistics
+
 #如果您的应用使用了代码混淆，请添加如下配置，以避免【友盟+】SDK被错误混淆导致SDK不可用。
 
 #-keep class com.umeng.** {*;}

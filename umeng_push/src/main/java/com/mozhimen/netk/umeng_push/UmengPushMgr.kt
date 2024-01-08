@@ -1,5 +1,7 @@
 package com.mozhimen.netk.umeng_push
 
+import com.mozhimen.basick.lintk.optin.OptInApiInit_InApplication
+
 /**
  * @ClassName PushKMgr
  * @Description TODO
@@ -7,6 +9,7 @@ package com.mozhimen.netk.umeng_push
  * @Date 2022/4/10 13:27
  * @Version 1.0
  */
+@OptInApiInit_InApplication
 object UmengPushMgr {
     fun init() {
         initUmengPushSdk()
