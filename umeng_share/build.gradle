@@ -27,6 +27,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    useLibrary 'org.apache.http.legacy'
 }
 
 dependencies {
@@ -34,16 +35,13 @@ dependencies {
     implementation project(':SwiftKit:basick')
     implementation project(project.path.replace(project.name, '') + ':umeng_basic')
 
-    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+    api fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
 
     // 下面各SDK根据宿主App是否使用相关业务按需引入。
     // 友盟统计SDK
 //    implementation  'com.umeng.umsdk:common:9.4.7'// 必选
 //    implementation  'com.umeng.umsdk:asms:1.4.0'// 必选
-    implementation 'com.umeng.umsdk:uverify:2.5.1'// 必选
-    implementation 'com.umeng.umsdk:uverify-main:2.0.3'// 必选
-    implementation 'com.umeng.umsdk:uverify-logger:2.0.3'// 必选
-    implementation 'com.umeng.umsdk:uverify-crashshield:2.0.3'// 必选
+    implementation 'com.twitter.sdk.android:twitter-core:3.3.0'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

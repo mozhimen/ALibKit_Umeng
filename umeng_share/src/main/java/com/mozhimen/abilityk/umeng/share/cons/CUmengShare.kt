@@ -7,6 +7,6 @@ package com.mozhimen.abilityk.umeng.share.cons
  * @Date 2024/1/8
  * @Version 1.0
  */
-object CUmengAuth {
+object CUmengShare {
     const val REQUEST_CODE_PERMISSION = 123
 }

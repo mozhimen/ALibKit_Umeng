@@ -36,8 +36,9 @@ dependencies {
     //umeng
     // 下面各SDK根据宿主App是否使用相关业务按需引入。
     // 友盟统计SDK
-    api  'com.umeng.umsdk:common:9.4.7'// 必选
-    api  'com.umeng.umsdk:asms:1.4.0'// 必选
+//    api  'com.umeng.umsdk:common:9.4.7'// 必选
+//    api  'com.umeng.umsdk:asms:1.4.0'// 必选
+    api fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
