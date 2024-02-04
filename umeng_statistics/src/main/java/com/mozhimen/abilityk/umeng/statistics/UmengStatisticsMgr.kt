@@ -1,12 +1,9 @@
 package com.mozhimen.abilityk.umeng.statistics
 
 import android.content.Context
-import com.mozhimen.abilityk.umeng.basic.cons.CManifest
-import com.mozhimen.basick.lintk.optin.OptInApiInit_InApplication
-import com.mozhimen.basick.manifestk.annors.AManifestKRequire
+import com.mozhimen.basick.lintk.optins.OApiInit_InApplication
 import com.umeng.analytics.MobclickAgent
 import com.umeng.analytics.MobclickAgent.PageMode
-import com.umeng.commonsdk.UMConfigure
 
 /**
  * @ClassName UmengStatistics
@@ -15,7 +12,7 @@ import com.umeng.commonsdk.UMConfigure
  * @Date 2023/12/26
  * @Version 1.0
  */
-@OptInApiInit_InApplication
+@OApiInit_InApplication
 object UmengStatisticsMgr {
 
     fun setPageCollectionModeManual() {

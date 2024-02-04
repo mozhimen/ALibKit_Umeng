@@ -2,7 +2,7 @@ package com.mozhimen.abilityk.umeng.basic
 
 import android.content.Context
 import com.mozhimen.abilityk.umeng.basic.cons.CManifest
-import com.mozhimen.basick.lintk.optin.OptInApiInit_InApplication
+import com.mozhimen.basick.lintk.optins.OApiInit_InApplication
 import com.mozhimen.basick.manifestk.annors.AManifestKRequire
 import com.umeng.commonsdk.UMConfigure
 
@@ -13,7 +13,7 @@ import com.umeng.commonsdk.UMConfigure
  * @Date 2024/1/8
  * @Version 1.0
  */
-@OptInApiInit_InApplication
+@OApiInit_InApplication
 object UmengBasicMgr {
     /**
      * // SDK预初始化函数不会采集设备信息，也不会向友盟后台上报数据。
