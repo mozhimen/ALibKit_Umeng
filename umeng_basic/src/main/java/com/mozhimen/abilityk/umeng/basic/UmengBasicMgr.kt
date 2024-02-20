@@ -2,8 +2,8 @@ package com.mozhimen.abilityk.umeng.basic
 
 import android.content.Context
 import com.mozhimen.abilityk.umeng.basic.cons.CManifest
+import com.mozhimen.abilityk.umeng.basic.optins.OIntentFilter_DATA_SCHEME_UMENG
 import com.mozhimen.basick.lintk.optins.OApiInit_InApplication
-import com.mozhimen.basick.manifestk.annors.AManifestKRequire
 import com.umeng.commonsdk.UMConfigure
 
 /**
@@ -21,7 +21,7 @@ object UmengBasicMgr {
      * public static void preInit(Context context, String appkey, String channel)
      */
     @JvmStatic
-    @AManifestKRequire(CManifest.INTENT_FILTER_DATA_SCHEME_UMENG)
+    @OIntentFilter_DATA_SCHEME_UMENG
     fun preInit(context: Context, appKey: String, channel: String) {
         UMConfigure.setLogEnabled(true/*BuildConfig.UMLogEnabled*/)
         UMConfigure.preInit(context, appKey, channel)
@@ -36,7 +36,7 @@ object UmengBasicMgr {
      * UMConfigure.init(Context context, String appkey, String channel, int deviceType, String pushSecret);
      */
     @JvmStatic
-    @AManifestKRequire(CManifest.INTENT_FILTER_DATA_SCHEME_UMENG)
+    @OIntentFilter_DATA_SCHEME_UMENG
     fun init(context: Context, appKey: String, channel: String) {
         UMConfigure.init(context, appKey, channel, UMConfigure.DEVICE_TYPE_PHONE, "")
     }
