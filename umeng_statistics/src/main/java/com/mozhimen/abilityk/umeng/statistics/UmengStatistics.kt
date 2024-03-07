@@ -3,7 +3,7 @@ package com.mozhimen.abilityk.umeng.statistics
 import android.content.Context
 import android.util.Log
 import com.mozhimen.basick.utilk.android.util.UtilKLog
-import com.mozhimen.basick.utilk.bases.IUtilK
+import com.mozhimen.basick.utilk.commons.IUtilK
 import com.umeng.analytics.MobclickAgent
 import com.umeng.commonsdk.UMConfigure
 
