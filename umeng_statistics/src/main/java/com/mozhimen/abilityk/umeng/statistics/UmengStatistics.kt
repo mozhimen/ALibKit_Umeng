@@ -2,7 +2,7 @@ package com.mozhimen.abilityk.umeng.statistics
 
 import android.content.Context
 import android.util.Log
-import com.mozhimen.basick.utilk.android.util.UtilKLog
+import com.mozhimen.basick.utilk.android.util.UtilKLogWrapper
 import com.mozhimen.basick.utilk.commons.IUtilK
 import com.umeng.analytics.MobclickAgent
 import com.umeng.commonsdk.UMConfigure
@@ -78,7 +78,7 @@ object UmengStatistics : IUtilK {
     fun printTestDeviceInfo(context: Context) {
         val getTestDeviceInfo: Array<String>? = getTestDeviceInfo(context)
         if (!getTestDeviceInfo.isNullOrEmpty()) {
-            UtilKLog.it(TAG, "showTestDeviceInfo {\"device_id\":\"" + getTestDeviceInfo[0] + "\",\"mac\":\"" + getTestDeviceInfo[1] + "\"}")
+            UtilKLogWrapper.i(TAG, "showTestDeviceInfo {\"device_id\":\"" + getTestDeviceInfo[0] + "\",\"mac\":\"" + getTestDeviceInfo[1] + "\"}")
         }
     }
 }
