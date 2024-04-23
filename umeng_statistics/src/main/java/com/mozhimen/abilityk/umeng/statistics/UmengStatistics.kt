@@ -1,7 +1,6 @@
 package com.mozhimen.abilityk.umeng.statistics
 
 import android.content.Context
-import android.util.Log
 import com.mozhimen.basick.utilk.android.util.UtilKLogWrapper
 import com.mozhimen.basick.utilk.commons.IUtilK
 import com.umeng.analytics.MobclickAgent
@@ -37,19 +36,19 @@ object UmengStatistics : IUtilK {
 
     @JvmStatic
     fun onPageStart(pageName: String) {
-        Log.d(TAG, "onPageStart: pageName $pageName")
+        UtilKLogWrapper.d(TAG, "onPageStart: pageName $pageName")
         MobclickAgent.onPageStart(pageName)
     }
 
     @JvmStatic
     fun onResume(context: Context, pageName: String) {
-        Log.d(TAG, "onResume   : pageName $pageName")
+        UtilKLogWrapper.d(TAG, "onResume   : pageName $pageName")
         MobclickAgent.onResume(context)
     }
 
     @JvmStatic
     fun onPause(context: Context, pageName: String) {
-        Log.d(TAG, "onPause    : pageName $pageName")
+        UtilKLogWrapper.d(TAG, "onPause    : pageName $pageName")
         MobclickAgent.onPause(context)
     }
 
@@ -58,7 +57,7 @@ object UmengStatistics : IUtilK {
      */
     @JvmStatic
     fun onPageEnd(pageName: String) {
-        Log.d(TAG, "onPageEnd  : pageName $pageName")
+        UtilKLogWrapper.d(TAG, "onPageEnd  : pageName $pageName")
         MobclickAgent.onPageEnd(pageName)
     }
 
