@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.mozhimen.abilityk.umeng.basic'
+    namespace 'com.mozhimen.libk.umeng.basic'
     compileSdk 34
 
     defaultConfig {

@@ -19,7 +19,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AAbilityKit_Umeng"
+rootProject.name = "ALibKit_Umeng"
 include ':app'
 include ':umeng_statistics'
 include ':umeng_push'

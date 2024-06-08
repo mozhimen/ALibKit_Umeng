@@ -1,9 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.AAbilityKit_Umeng" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.ALibKit_Umeng" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.AAbilityKit_Umeng" parent="Base.Theme.AAbilityKit_Umeng" />
+    <style name="Theme.ALibKit_Umeng" parent="Base.Theme.ALibKit_Umeng" />
 </resources>
