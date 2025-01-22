@@ -1,26 +1,24 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
 }
 
 android {
-    namespace 'com.mozhimen.libk.umeng.test'
+    namespace 'com.mozhimen.libk.umeng.basic'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.mozhimen.libk.umeng.test"
-        minSdk 24
-        targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        minSdk 19
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
     compileOptions {
@@ -33,7 +31,15 @@ android {
 }
 
 dependencies {
-    implementation project(':ASwiftKit:bindk')
+
+    implementation project(':KUtilKit:android')
+
+    //umeng
+    // 下面各SDK根据宿主App是否使用相关业务按需引入。
+    // 友盟统计SDK
+    api  'com.umeng.umsdk:common:9.4.7'// 必选
+    api  'com.umeng.umsdk:asms:1.4.0'// 必选
+    api fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
