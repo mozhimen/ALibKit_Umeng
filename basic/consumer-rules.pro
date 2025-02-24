@@ -1,4 +1,5 @@
 -keep class com.umeng.** {*;}
+-keep class com.uc.** {*;}
 -keep class org.repackage.** {*;}
 -keep class com.uyumao.** { *; }
 -keepclassmembers class * {
