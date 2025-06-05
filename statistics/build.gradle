@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace 'com.mozhimen.libk.umeng.statistics'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         minSdk 19
@@ -33,7 +33,11 @@ android {
 dependencies {
 
     implementation project(':ASwiftKit:basick')
-    implementation project(project.path.replace(project.name, '') + ':basic')
+    if (rootProject.name == "ALibKit_Umeng") {
+        api project(':basic')
+    } else {
+        api project(':ALibKit_Umeng:basic')
+    }
 
     //umeng
     // 下面各SDK根据宿主App是否使用相关业务按需引入。
