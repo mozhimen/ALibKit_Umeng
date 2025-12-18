@@ -1,8 +1,8 @@
 package com.mozhimen.libk.umeng.common
 
 import android.content.Context
+import com.mozhimen.kotlin.lintk.optins.OApiInit_InApplication
 import com.mozhimen.libk.umeng.common.optins.OIntentFilter_DATA_SCHEME_UMENG
-import com.mozhimen.basick.lintk.optins.OApiInit_InApplication
 import com.umeng.commonsdk.UMConfigure
 
 /**

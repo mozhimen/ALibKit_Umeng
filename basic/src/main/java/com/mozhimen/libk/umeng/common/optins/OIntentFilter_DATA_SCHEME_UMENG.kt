@@ -1,7 +1,7 @@
 package com.mozhimen.libk.umeng.common.optins
 
+import com.mozhimen.kotlin.lintk.annors.ADescription
 import com.mozhimen.libk.umeng.common.cons.CManifest
-import com.mozhimen.basick.lintk.annors.ADescription
 
 /**
  * @ClassName OIntentFilter_DATA_SCHEME_UMENG
